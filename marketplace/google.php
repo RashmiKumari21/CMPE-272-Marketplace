@@ -4,9 +4,9 @@ require ("vendor/autoload.php");
 
 $g_client = new Google_Client();
 
-$g_client->setClientId("762904444053-oljf480u0pbm7pg4iv0acmvtqq7cug5l.apps.googleusercontent.com");
-$g_client->setClientSecret("UQH510HYSr84wIv3t94YgRad");
-$g_client->setRedirectUri("http://localhost/272_Marketplace/CMPE-272--Marketplace/marketplace/welcome.php");
+$g_client->setClientId("");
+$g_client->setClientSecret("");
+$g_client->setRedirectUri("");
 $g_client->setScopes("email");
 
 //Step 2 : Create the url
