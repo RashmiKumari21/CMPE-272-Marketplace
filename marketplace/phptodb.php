@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 
 // Create connection
-$mysqli = new mysqli($servername, $username, $password, "marketplace");
+$mysqli = new mysqli($servername, $username, $password, "rumination");
 
 // Check connection
 if ($mysqli->connect_error) {

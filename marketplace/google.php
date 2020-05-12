@@ -4,8 +4,9 @@ require ("vendor/autoload.php");
 
 $g_client = new Google_Client();
 
-$g_client->setClientId("762904444053-oljf480u0pbm7pg4iv0acmvtqq7cug5l.apps.googleusercontent.com");
-$g_client->setClientSecret("UQH510HYSr84wIv3t94YgRad");
+
+$g_client->setClientId("718273836854-fgt71s7u37tvuflavfki7tpmlkm6ohqa.apps.googleusercontent.com");
+$g_client->setClientSecret("j7y7RzY5KF_cF0vg1dsoDvj_");
 $g_client->setRedirectUri("http://localhost/272_Marketplace/CMPE-272--Marketplace/marketplace/welcome.php");
 $g_client->setScopes("email");
 

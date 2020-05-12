@@ -4,36 +4,15 @@
 $authUrl = $g_client->createAuthUrl();
 
 
-//echo $pay_load["email"];
-// $token = $g_client->fetchAccessTokenWithAuthCode($code);
-// $g_client->setAccessToken($token);
 if (!isset($_SESSION['email'])){
 	header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
 }
 else if (isset($_SESSION['token'])){
-            //$g_client->setAccessToken($_SESSION['token']);
 						echo "<a href='logout.php'><span>Logout</span> </a>";
 							
 }
 
-// echo "Arpit access token".$g_client->fetchAccessTokenWithAuthCode($_GET['code']);
 
-// print_r($_SESSION['token']);
-// if(isset($_GET['code'])){
-// 	$g_client->authenticate($_GET['code']);
-//   $_SESSION['token'] = $g_client->fetchAccessTokenWithAuthCode($_GET['code']);
-//   echo 'arpit cufrnbiutrbntiubnirt'.$_SESSION['token'];
-// 	header('Location: ' . filter_var($g_client->getRedirectUri(), FILTER_SANITIZE_URL));
-// }
-// if (isset($_SESSION['token'])) {
-//   $_SESSION["allowed"]=true;
-//   echo "Ho";
-// 	$gpUserProfile = $google_oauthV2->userinfo->get();
-// 	$email=$gpUserProfile['email'];
-// 	setcookie("email",$email);
-// 	setcookie("allowed",True);
-//    // $_COOKIE["email_id"]=$gpUserProfile['gender'];
-// }
 
     echo "<!doctype html>
     <html lang='en'>

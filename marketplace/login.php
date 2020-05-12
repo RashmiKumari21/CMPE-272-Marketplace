@@ -10,6 +10,8 @@ $sql = "SELECT * FROM user_info where username = '$username' and password = '$pa
 $result = mysqli_query($mysqli, $sql);
 
 if($result->num_rows){
+  $_SESSION['email'] = $username;
+  $_SESSION['token'] = $username;
   echo "<h1>Login Successful</h1>";
   $_SESSION["allowed"]=true;
   header('location:welcome.php');
