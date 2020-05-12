@@ -5,7 +5,7 @@ $password = $_GET["password"];
 
 
 
-$sql = "SELECT * FROM user_info where username = '$username' and password = '$password'";
+$sql = "SELECT * FROM users where username = '$username' and password = '$password'";
 
 $result = mysqli_query($mysqli, $sql);
 
