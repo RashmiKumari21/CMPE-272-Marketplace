@@ -11,7 +11,8 @@ try {
         die("Connection failed: " . mysqli_connect_error());
     }   
 
-    $query = "select * from cmpe272.user_activity;";
+    $username = trim($_REQUEST["username"]);
+    $query = "SELECT * FROM cmpe272.user_activity WHERE username like '%" . $username . "%';";
 
     $retval = mysqli_query( $conn, $query );
     if(! $retval ) { 

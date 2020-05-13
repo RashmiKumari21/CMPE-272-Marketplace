@@ -1,6 +1,6 @@
 <?php
 
-function get_web_page($url) {
+function get_web_page($url, $username) {
     $options = array(
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HEADER         => false,
@@ -15,6 +15,7 @@ function get_web_page($url) {
 
     $ch = curl_init($url);
     curl_setopt_array($ch, $options);
+    curl_setopt($ch, CURLOPT_USERPWD, "$username");
 
     $content  = curl_exec($ch);
 
