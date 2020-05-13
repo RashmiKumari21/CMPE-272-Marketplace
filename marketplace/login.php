@@ -1,7 +1,7 @@
 <?php session_start();
 include "phptodb.php";
-$username = $_GET["username"];
-$password = $_GET["password"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 
 
@@ -11,6 +11,8 @@ if(mysqli_query($mysqli, $sql)){
   $result = mysqli_query($mysqli, $sql);
 
 if($result->num_rows){
+  echo "<script>document.cookie='username=$username'</script>";
+  echo "<script>window.location.pathname = '/landingPage/index.php'</script>";
   $_SESSION['email'] = $username;
   $_SESSION['token'] = $username;
   echo "<h1>Login Successful</h1>";
