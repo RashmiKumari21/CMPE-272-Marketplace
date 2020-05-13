@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../css/rating.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<script>
+
+let oneStarPercentage = "<?php echo $oneStarPer ;?>;";
+let twoStarPercentage = "<?php echo $twoStarPer ;?>;";
+let threeStarPercentage = "<?php echo $threeStarPer ;?>;";
+let fourStarPercentage = "<?php echo $fourStarPer ;?>;";
+let fiveStarPercentage = "<?php echo $fiveStarPer ;?>;";
+
+let percentageOneStar = Math.round(parseFloat(oneStarPercentage)).toFixed(2) + '%';
+let percentageTwoStar = Math.round(parseFloat(twoStarPercentage)).toFixed(2) + '%';
+let percentageThreeStar = Math.round(parseFloat(threeStarPercentage)).toFixed(2) + '%';
+let percentageFourStar = Math.round(parseFloat(fourStarPercentage)).toFixed(2) + '%';
+let percentageFiveStar = Math.round(parseFloat(fiveStarPercentage)).toFixed(2) + '%';
+
+$('.bar-1').css('width', percentageOneStar.toString());
+$('.bar-2').css('width', percentageTwoStar.toString());
+$('.bar-3').css('width', percentageThreeStar.toString());
+$('.bar-4').css('width', percentageFourStar.toString());
+$('.bar-5').css('width', percentageFiveStar.toString());
+
+function insertComments(){
+  let content = $("#message-text").val();
+  let username = "Ragini";
+  let html = '<div class="row"><div class="col-sm-1"><div class="thumbnail">';
+  html += '<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">';
+  html += '</div></div><div class="col-sm-11"><div class="panel panel-default"><div class="panel-heading" style="font-size: 14px;">';
+  html += '<strong>'+ username +'</strong>';
+  html += '</div><div class="panel-body"><label>';
+  html += content;
+  html += '</label></div></div></div></div>';
+
+  $("#divreviewcomments").append(html);
+  $("#message-text").val("");
+
+}
+
+
+</script>

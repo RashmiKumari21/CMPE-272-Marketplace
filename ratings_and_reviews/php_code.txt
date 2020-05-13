@@ -1,0 +1,11 @@
+$oneStar = 10;
+$twoStar = 23;
+$threeStar = 12;
+$fourStar = 24;
+$fiveStar = 14;
+$total = 83;
+$oneStarPer = ($oneStar / $total) * 100;
+$twoStarPer = ($twoStar / $total) * 100;
+$threeStarPer = ($threeStar / $total) * 100;
+$fourStarPer = ($fourStar / $total) * 100;
+$fiveStarPer = ($fiveStar / $total) * 100;
