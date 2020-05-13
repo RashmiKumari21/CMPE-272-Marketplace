@@ -5,9 +5,10 @@ $password = $_GET["password"];
 
 
 
-$sql = "SELECT * FROM user_info where username = '$username' and password = '$password'";
+$sql = "SELECT * FROM users where username = '$username' and password = '$password'";
 
-$result = mysqli_query($mysqli, $sql);
+if(mysqli_query($mysqli, $sql)){
+  $result = mysqli_query($mysqli, $sql);
 
 if($result->num_rows){
   $_SESSION['email'] = $username;
@@ -19,5 +20,10 @@ if($result->num_rows){
  else{
    echo "invalid creds";
  }
+}
+else{
+  echo "There was an error executing below query: ". "<br>"  . $sql . "<br>" . $mysqli->error;
+}
+
 
 ?>
