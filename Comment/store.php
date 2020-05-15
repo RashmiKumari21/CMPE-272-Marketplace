@@ -1,4 +1,5 @@
 <?php
+//backend code for the updating the rating and the review.
 	  function ratingupdate($product_id,$rating) {
 
       $servername = "3.234.254.199";

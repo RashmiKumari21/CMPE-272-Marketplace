@@ -13,6 +13,7 @@
   </head>
   <body>
     <?php
+	// code to update the variables
     $servername = "3.234.254.199";
     $username = "cmpe272";
     $password = "cmpe272";
@@ -116,6 +117,7 @@
         </div>
 		//ee
 		<?php
+		// code to print out the comments stored in the database.
 		$query2 = "SELECT username, comment FROM reviews WHERE productid = 1";
 	  $result2 = mysqli_query($mysqli, $query2);
 	  
