@@ -16,7 +16,7 @@
       $query="UPDATE products SET $rating = $rating + 1 WHERE id ='$product_id'";
       $result = mysqli_query($mysqli, $query);
     }
-	function reviewupdate($product_id,$review,$username) {
+	function reviewupdate($product_id,$review,$uname) {
 
       $servername = "3.234.254.199";
       $username = "cmpe272";
@@ -29,7 +29,7 @@
       if ($mysqli->connect_error) {
           die("Connection failed: " . $mysqli->connect_error);
       }
-      $query = "INSERT INTO reviews VALUES ('$review',$product_id,'$username');";
+      $query = "INSERT INTO reviews VALUES ('$review',$product_id,'$uname');";
       $result = mysqli_query($mysqli, $query);
     }
 	if(isset($_POST['rating'])){
