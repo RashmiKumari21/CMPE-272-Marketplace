@@ -115,6 +115,7 @@
               </div>
            </div>
         </div>
+		</div>
 		//ee
 		<?php
 		// code to print out the comments stored in the database.
@@ -125,6 +126,12 @@
 	  if($result2){
 		  while($row2 = mysqli_fetch_array($result2) && $i<5){
 			  print_r($row2);
+			  echo '<div class="row">
+        <div class="col-sm-1">
+           <div class="thumbnail">
+              <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+           </div>
+        </div>';
 			  echo '<div class="col-sm-11">';
            echo '<div class="panel panel-default">';
               echo '<div class="panel-heading" style="font-size: 14px;">';
@@ -140,14 +147,14 @@
 				 echo '</label>';
               echo'</div>';
            echo'</div>
-        </div>';
+        </div> </div>';
 		$i=$i+1;
 			  
 	  }}
 	  else{
 	  echo 'NO';}
 		?>
-     </div>
+     
   </div>
 
   <br />
