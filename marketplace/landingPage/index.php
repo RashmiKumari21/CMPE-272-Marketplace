@@ -60,6 +60,8 @@ if(!getCookie('username')){
               <li><a href="#services">Partner Sites</a></li>
               <li><a href="#portfolio">Top Products</a></li>
               <li><a href="#team">Team</a></li>
+              <li><a href="/user_activity.php">User Activity</a></li>
+              <li><a href="/statistics.php">Statistics</a></li>
 
             </ul>
           </nav><!-- .nav-menu -->
@@ -141,11 +143,11 @@ if(!getCookie('username')){
           <div class="col-xl-10">
             <div class="row">
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Minfri', 'http://app.ragini-dwivedi.com/services.php')">
                 <div class="portfolio-wrap">
-                  <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
+                  <img src="https://ninetheme.com/themes/techland/wp-content/uploads/2019/05/img_14.png" style="height: 257px; padding-left: 55px;" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Website 1</h4>
+                    <h4>Minfri</h4>
                     <p>App</p>
                     <div class="portfolio-links">
                       <a href="assets/img/gallery/gallery-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"></a>
@@ -154,40 +156,40 @@ if(!getCookie('username')){
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Rashmi', '')">
                 <div class="portfolio-wrap">
                   <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Website 2</h4>
+                    <h4>Rashmi</h4>
                     <p>Web</p>
                     <div class="portfolio-links">
-                      <a href="assets/img/gallery/gallery-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"></a>
+                      <a href="assets/img/gallery/gallery-2.jpg" data-gall="portfolioGallery" class="venobox" title="Rashmi"></a>
                     </div>
                   </div>
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Prashant', '')">
                 <div class="portfolio-wrap">
                   <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Website 3</h4>
+                    <h4>Prashant</h4>
                     <p>App</p>
                     <div class="portfolio-links">
-                      <a href="assets/img/gallery/gallery-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"></a>
+                      <a href="assets/img/gallery/gallery-3.jpg" data-gall="portfolioGallery" class="venobox" title="Prashant"></a>
                     </div>
                   </div>
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Dishant', '')">
                 <div class="portfolio-wrap">
                   <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Website 4</h4>
+                    <h4>Dishant</h4>
                     <p>Card</p>
                     <div class="portfolio-links">
-                      <a href="assets/img/gallery/gallery-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"></a>
+                      <a href="assets/img/gallery/gallery-4.jpg" data-gall="portfolioGallery" class="venobox" title="Dishant"></a>
                     </div>
                   </div>
                 </div>
@@ -343,6 +345,24 @@ if(!getCookie('username')){
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+      function navigateToCompany(companyName, companyLink){
+          let counter = getCookie(companyName);
+          if(counter == null){
+              setCookie(companyName, 0);
+          }else {
+              counter = parseInt(counter) + 1;
+              setCookie(companyName, counter);
+          }
+          
+          //window.location.href = companyLink;
+      }
+
+      function setCookie(name,value) {
+          document.cookie = name + "=" + value  + "; path=/";
+      }
+
+  </script>
 
 </body>
 

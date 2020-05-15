@@ -17,7 +17,6 @@ if($result->num_rows){
   $_SESSION['token'] = $username;
   echo "<h1>Login Successful</h1>";
   $_SESSION["allowed"]=true;
-  header('location:welcome.php');
  }
  else{
    echo "invalid creds";
