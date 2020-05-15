@@ -123,19 +123,19 @@
 	  
 	  $i=0;
 	  if($result2){
-		  while($row = mysqli_fetch_array($result2) && $i<5){
-			  echo print_r($row);
+		  while($row2 = mysqli_fetch_array($result2) && $i<5){
+			  print_r($row2);
 			  echo '<div class="col-sm-11">';
            echo '<div class="panel panel-default">';
               echo '<div class="panel-heading" style="font-size: 14px;">';
                 echo' <strong>';
-				$x=$row['username'];
+				$x=$row2['username'];
 				echo $x;
 				echo '</strong>';
               echo'</div>';
               echo '<div class="panel-body">';
                  echo'<label>';
-				 $y=$row['comment'];
+				 $y=$row2['comment'];
 				 echo $y;
 				 echo '</label>';
               echo'</div>';
@@ -157,24 +157,23 @@
           <div class="form-group">
               <label for="recipient-name" class="col-form-label startheading">Leave Comment:</label>
           </div>
-		  <div class="form-group row">
-    <label for="message-text"" class="col-sm-2 col-form-label">Product_ID</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="prodid" value="1">
+		  
+    <div >
+      <input class="hidden" type="text" readonly class="form-control-plaintext" id="prodid" value="1">
     </div>
-	<div class="form-group row">
-    <label for="message-text"" class="col-sm-2 col-form-label">Username</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="username" value="Distant">
+	
+    
+    <div >
+      <input class="hidden" type="text" readonly class="form-control-plaintext" id="username" value="Distant">
     </div>
           <div class="form-group">
               <label for="message-text" class="col-form-label startheading">Message:</label>
               <textarea class="form-control" id="message-text" rows="5"></textarea>
           </div>
-      </div>
+      
 	  
 	  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
+    <label for="exampleFormControlSelect1">Please provide a Rating</label>
     <select class="form-control" id="rating">
       <option>onestar</option>
       <option>twostar</option>
