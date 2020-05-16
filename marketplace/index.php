@@ -9,6 +9,7 @@ require ("google.php");?>
 <html>
 <head>
 	<title>Login Page</title>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1690015317789038&autoLogAppEvents=1"></script>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -19,6 +20,63 @@ require ("google.php");?>
 
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+
+
+window.fbAsyncInit = function() {
+    // FB JavaScript SDK configuration and setup
+    FB.init({
+      appId      : '1690015317789038', // FB App ID
+      cookie     : true,  // enable cookies to allow the server to access the session
+      xfbml      : true,  // parse social plugins on this page
+      version    : 'v3.2' // use graph api version 2.8
+    });
+    
+    // Check whether the user already logged in
+    FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+            //display user data
+            getFbUserData();
+        }
+    });
+};
+
+// Load the JavaScript SDK asynchronously
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+// Facebook login with JavaScript SDK
+function fbLogin() {
+    FB.login(function (response) {
+        if (response.authResponse) {
+            // Get and display the user profile data
+            getFbUserData();
+        } else {
+            alert("User cancelled login or did not fully authorize.");
+        }
+    }, {scope: 'email'});
+}
+
+
+// Fetch the user profile data from facebook
+function getFbUserData(){
+    FB.api('/me', {locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture'},
+    function (response) {
+
+       document.cookie = "username=" + response.email + "; path=/cmpe/CMPE-272-Marketplace/marketplace";
+       window.location.href = "https://app.ragini-dwivedi.com/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php";
+
+    });
+}
+
+
+
 </head>
 <body>
 <div class="container">
@@ -27,7 +85,7 @@ require ("google.php");?>
 			<div class="card-header">
 				<h3>Sign In</h3>
 				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
+					<span onclick="fbLogin();"><i class="fab fa-facebook-square"></i></span>
 					<?php
 						$auth_url = $g_client->createAuthUrl();
 						echo "<a href='$auth_url'><span><i class='fab fa-google-plus-square'></i></span> </a>";

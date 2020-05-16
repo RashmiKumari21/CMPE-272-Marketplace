@@ -17,6 +17,7 @@ if($result->num_rows){
   $_SESSION['token'] = $username;
   echo "<h1>Login Successful</h1>";
   $_SESSION["allowed"]=true;
+  setcookie("username", $username, time() + (86400 * 30), "/cmpe/CMPE-272-Marketplace/marketplace");
  }
  else{
    echo "invalid creds";
