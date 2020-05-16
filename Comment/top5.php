@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <?php 
@@ -22,6 +23,9 @@
       $result = mysqli_query($mysqli, $query);
 	  // query for top 5 rated
 	  $query2="SELECT product_image_url,product_url,average FROM products ORDER BY average DESC LIMIT 5";
+      $result2 = mysqli_query($mysqli, $query2);
+	  // query for top 5 rated
+	  $query2='SELECT product_image_url,product_url,average FROM products WHERE companyname ="Minfri" ORDER BY average DESC LIMIT 5';
       $result2 = mysqli_query($mysqli, $query2);
 
 
