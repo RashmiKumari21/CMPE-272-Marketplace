@@ -51,7 +51,9 @@ if(isset($pay_load)){
      //print_r($_SESSION['token']);
     $_SESSION['email'] = $pay_load["email"];
     $g_client->setAccessToken($_SESSION['token']["id_token"]);
-    setcookie("username", $pay_load["email"], time() + (86400 * 30), "/cmpe/CMPE-272-Marketplace/marketplace");
+    echo '<script type="text/JavaScript">  
+    document.cookie = "username=" + $pay_load["email"] + "; path=/cmpe/CMPE-272-Marketplace/marketplace";
+     </script>';
     //$_SESSION(['token']);
   
 }
