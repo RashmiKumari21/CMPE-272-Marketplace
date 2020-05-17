@@ -11,7 +11,7 @@ function getCookie(name) {
     return null;
 }
 if(!getCookie('username')){
-  window.location.pathname = '/index.php';
+  window.location.pathname = '/cmpe/CMPE-272-Marketplace/marketplace/index.php';
 }
 </script>
 <!DOCTYPE html>
