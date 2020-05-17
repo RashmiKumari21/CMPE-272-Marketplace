@@ -100,11 +100,10 @@ background-color:#fff;      }
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href="index.html">Marketplace</a></h1>
+          <h1 class="logo mr-auto"><a href="/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php">Marketplace</a></h1>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="/landingPage/index.php">Home</a></li>
               <li><a href="/landingPage/index.php#services">Partner Sites</a></li>
               <li><a href="/landingPage/index.php#portfolio">Top Products</a></li>
               <li><a href="/landingPage/index.php#team">Team</a></li>
