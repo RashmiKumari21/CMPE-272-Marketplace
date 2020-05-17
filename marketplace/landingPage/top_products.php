@@ -115,6 +115,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+            <p><?php echo $row["average"]?><?php echo ' Stars' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -131,6 +132,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+             <p><?php echo $row["visited"]?><?php echo ' times visited' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -163,6 +165,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+            <p><?php echo $row["average"]?><?php echo ' Stars' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -179,6 +182,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+             <p><?php echo $row["visited"]?><?php echo ' times visited' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -211,6 +215,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+            <p><?php echo $row["average"]?><?php echo ' Stars' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -227,6 +232,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+             <p><?php echo $row["visited"]?><?php echo ' times visited' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -259,6 +265,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+            <p><?php echo $row["average"]?><?php echo ' Stars' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -275,6 +282,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+             <p><?php echo $row["visited"]?><?php echo ' times visited' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -307,6 +315,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+            <p><?php echo $row["average"]?><?php echo ' Stars' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
@@ -323,6 +332,7 @@ foreach ($slicedArray_4 as &$value_4) {
           <div class="portfolio-info">
             <h4><?php echo $row["product_name"] ?></h4>
             <p><?php echo $row["companyname"] ?></p>
+             <p><?php echo $row["visited"]?><?php echo ' times visited' ?></p>
             <div class="portfolio-links">
               <a href="<?php echo $row["product_image_url"] ?>?username=<?php echo $username ?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?php echo $row["product_url"] ?>?username=<?php echo $username ?>" title="More Details"><i class="bx bx-link"></i></a>
