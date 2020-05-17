@@ -172,7 +172,7 @@ if(!getCookie('username')){
 
               <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Eticket', 'https://prashanth-e-ticket.000webhostapp.com/content/products.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
-                  <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/eticket-small.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Eticket</h4>
                     <p>Web</p>
@@ -217,9 +217,25 @@ if(!getCookie('username')){
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li class='top-rated-filter' data-filter=".top-rated-products" class="filter-active">Top 5 rated Products</li>
-              <li data-filter=".top-visited-products">Top 5 visited Products</li>
-              <li data-filter=".recently-visited-products">Last 5 visited Products</li>
+              <li class='top-rated-filter' data-filter=".top-rated-products" class="filter-active">Top 5 rated Products from all sites</li>
+              <li data-filter=".top-visited-products">Top 5 visited Products from all sites</li>
+              <li data-filter=".recently-visited-products">Last 5 visited Products from all sites</li>
+              <br/>
+              <li data-filter=".top-rated-products_1" >Top 5 rated Products from Eticket</li>
+              <li data-filter=".top-visited-products_1">Top 5 visited Products from Eticket</li>
+              <li data-filter=".recently-visited-products_1">Last 5 visited Products from Eticket</li>
+              <br/>
+              <li data-filter=".top-rated-products_2" >Top 5 rated Products from Minfri</li>
+              <li data-filter=".top-visited-products_2">Top 5 visited Products from Minfri</li>
+              <li data-filter=".recently-visited-products_2">Last 5 visited Products from Minfri</li>
+              <br/>
+              <li data-filter=".top-rated-products_3" >Top 5 rated Products from Rumination</li>
+              <li data-filter=".top-visited-products_3">Top 5 visited Products from Rumination</li>
+              <li data-filter=".recently-visited-products_3">Last 5 visited Products from Rumination</li>
+              <br/>
+              <li data-filter=".top-rated-products_4" >Top 5 rated Products from Dad Joke Inc</li>
+              <li data-filter=".top-visited-products_4">Top 5 visited Products from Dad Joke Inc</li>
+              <li data-filter=".recently-visited-products_4">Last 5 visited Products from Dad Joke Inc</li>
             </ul>
           </div>
         </div>
@@ -227,27 +243,6 @@ if(!getCookie('username')){
         <div class="row portfolio-container justify-content-center">
 
           <?php include './top_products.php' ?>
-
-        </div>
-
-        <div class="section-title">
-          <h2>Top Products</h2>
-          <h3><span>Top List of Eticket Products</span></h3>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li class='top-rated-filter' data-filter=".top-rated-products_1" class="filter-active">Top 5 rated Products</li>
-              <li data-filter=".top-visited-products_1">Top 5 visited Products</li>
-              <li data-filter=".recently-visited-products_1">Last 5 visited Products</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container justify-content-center">
-
-          <?php include './top_products_1.php' ?>
 
         </div>
 
@@ -274,7 +269,7 @@ if(!getCookie('username')){
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>Ragini Dwivedi</h4>
-                      <span>Owner of Website 1</span>
+                      <span>Owner of Minfri</span>
                     </div>
                     <div class="social">
                       <a href="#"><i class="icofont-twitter"></i></a>
@@ -292,7 +287,7 @@ if(!getCookie('username')){
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>Prashanth Narasimha</h4>
-                      <span>Owner of Website 2</span>
+                      <span>Owner of Eticket</span>
                     </div>
                     <div class="social">
                       <a href="#"><i class="icofont-twitter"></i></a>
@@ -310,7 +305,7 @@ if(!getCookie('username')){
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>Rashmi Kumari</h4>
-                      <span>Owner of Website 3</span>
+                      <span>Owner of Rumination</span>
                     </div>
                     <div class="social">
                       <a href="https://www.linkedin.com/in/rashmi-ku"><i class="icofont-twitter"></i></a>
@@ -328,7 +323,7 @@ if(!getCookie('username')){
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>Dishant Shah</h4>
-                      <span>Owner of Website 4</span>
+                      <span>Owner of Dad Joke Inc</span>
                     </div>
                     <div class="social">
                       <a href="#"><i class="icofont-twitter"></i></a>
