@@ -172,7 +172,7 @@ if(!getCookie('username')){
 
               <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Eticket', 'https://prashanth-e-ticket.000webhostapp.com/content/products.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
-                  <img src="assets/img/gallery/eticket-small.jpg" class="img-fluid" alt="">
+                  <img src="http://prashanth-e-ticket.000webhostapp.com/content/eticket-small.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Eticket</h4>
                     <p>Web</p>
