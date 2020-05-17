@@ -1,3 +1,4 @@
+
 <script>
 function getCookie(name) {
     var nameEQ = name + "=";
@@ -52,7 +53,7 @@ if(!getCookie('username')){
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href="index.html">Marketplace</a></h1>
+          <h1 class="logo mr-auto"><a href="/landingPage/index.php">Marketplace</a></h1>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
@@ -143,12 +144,12 @@ if(!getCookie('username')){
           <div class="col-xl-10">
             <div class="row">
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Minfri', 'http://app.ragini-dwivedi.com/services.php')">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Minfri', 'http://app.ragini-dwivedi.com/services.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
                   <img src="https://ninetheme.com/themes/techland/wp-content/uploads/2019/05/img_14.png" style="height: 257px; padding-left: 55px;" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Minfri</h4>
-                    <p>App</p>
+                    <p>Web</p>
                     <div class="portfolio-links">
                       <a href="assets/img/gallery/gallery-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"></a>
                     </div>
@@ -169,12 +170,12 @@ if(!getCookie('username')){
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Prashant', '')">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Eticket', 'https://prashanth-e-ticket.000webhostapp.com/content/products.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
                   <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Prashant</h4>
-                    <p>App</p>
+                    <h4>Eticket</h4>
+                    <p>Web</p>
                     <div class="portfolio-links">
                       <a href="assets/img/gallery/gallery-3.jpg" data-gall="portfolioGallery" class="venobox" title="Prashant"></a>
                     </div>
@@ -187,7 +188,7 @@ if(!getCookie('username')){
                   <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Dishant</h4>
-                    <p>Card</p>
+                    <p>Web</p>
                     <div class="portfolio-links">
                       <a href="assets/img/gallery/gallery-4.jpg" data-gall="portfolioGallery" class="venobox" title="Dishant"></a>
                     </div>
@@ -210,8 +211,7 @@ if(!getCookie('username')){
 
         <div class="section-title">
           <h2>Top Products</h2>
-          <h3>Check our <span>Top List of Products</span></h3>
-          <p>Below are our top 5 products based on different criterias. Check it out</p>
+          <h3><span>Top List of Marketplace Products</span></h3>
         </div>
 
         <div class="row">
@@ -227,6 +227,27 @@ if(!getCookie('username')){
         <div class="row portfolio-container justify-content-center">
 
           <?php include './top_products.php' ?>
+
+        </div>
+
+        <div class="section-title">
+          <h2>Top Products</h2>
+          <h3><span>Top List of Eticket Products</span></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li class='top-rated-filter' data-filter=".top-rated-products_1" class="filter-active">Top 5 rated Products</li>
+              <li data-filter=".top-visited-products_1">Top 5 visited Products</li>
+              <li data-filter=".recently-visited-products_1">Last 5 visited Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container justify-content-center">
+
+          <?php include './top_products_1.php' ?>
 
         </div>
 

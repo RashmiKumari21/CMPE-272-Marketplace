@@ -184,6 +184,7 @@
       });
     });
     $('#portfolio #portfolio-flters .top-rated-filter').click();
+    $('.portfolio #portfolio-flters .top-rated-filter_1').click();
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
