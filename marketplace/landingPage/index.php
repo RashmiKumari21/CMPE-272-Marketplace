@@ -370,8 +370,7 @@ if(!getCookie('username')){
               counter = parseInt(counter) + 1;
               setCookie(companyName, counter);
           }
-
-          //window.location.href = companyLink;
+          window.open(companyLink, '_blank');
       }
 
       function setCookie(name,value) {
