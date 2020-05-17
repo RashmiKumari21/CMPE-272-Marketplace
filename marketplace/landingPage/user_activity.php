@@ -104,12 +104,12 @@ background-color:#fff;      }
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#services">Partner Sites</a></li>
-              <li><a href="#portfolio">Top Products</a></li>
-              <li><a href="#team">Team</a></li>
-              <li class="active"><a href="/user_activity.php">User Activity</a></li>
-              <li><a href="/statistics.php">Statistics</a></li>
+              <li><a href="/landingPage/index.php">Home</a></li>
+              <li><a href="/landingPage/index.php#services">Partner Sites</a></li>
+              <li><a href="/landingPage/index.php#portfolio">Top Products</a></li>
+              <li><a href="/landingPage/index.php#team">Team</a></li>
+              <li class="active"><a href="/landingPage/user_activity.php">User Activity</a></li>
+              <li><a href="/landingPage/statistics.php">Statistics</a></li>
 
             </ul>
           </nav><!-- .nav-menu -->
