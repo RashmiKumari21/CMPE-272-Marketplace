@@ -100,13 +100,13 @@ background-color:#fff;      }
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href="/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php">Marketplace</a></h1>
+          <h1 class="logo mr-auto"><a href="/cmpe/CMPE-272-Marketplace/marketplace/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php">Marketplace</a></h1>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="/landingPage/index.php#services">Partner Sites</a></li>
-              <li><a href="/landingPage/index.php#portfolio">Top Products</a></li>
-              <li><a href="/landingPage/index.php#team">Team</a></li>
+              <li><a href="/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php#services">Partner Sites</a></li>
+              <li><a href="/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php#portfolio">Top Products</a></li>
+              <li><a href="/cmpe/CMPE-272-Marketplace/marketplace/landingPage/index.php#team">Team</a></li>
               <li class="active"><a href="/landingPage/user_activity.php">User Activity</a></li>
               <li><a href="/landingPage/statistics.php">Statistics</a></li>
 
