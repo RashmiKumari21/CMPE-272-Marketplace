@@ -157,7 +157,7 @@ if(!getCookie('username')){
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Rumination', 'http://rashmikumari.us/services.php')">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Rumination', 'http://rashmikumari.us/services.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
                   <img src="http://rashmikumari.us/images/my%20post%20(13).jpg?crc=3823704199" class="img-fluid" alt="">
                   <div class="portfolio-info">
