@@ -183,11 +183,11 @@ if(!getCookie('username')){
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Dishant', '')">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Dishant', 'https://antdish.info/product.php?username=<?php echo $_COOKIE['username'] ?>')">
                 <div class="portfolio-wrap">
                   <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Dishant</h4>
+                    <h4>Dad Joke Inc</h4>
                     <p>Web</p>
                     <div class="portfolio-links">
                       <a href="assets/img/gallery/gallery-4.jpg" data-gall="portfolioGallery" class="venobox" title="Dishant"></a>
@@ -370,7 +370,7 @@ if(!getCookie('username')){
               counter = parseInt(counter) + 1;
               setCookie(companyName, counter);
           }
-          
+
           //window.location.href = companyLink;
       }
 
