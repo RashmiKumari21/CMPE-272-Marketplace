@@ -84,7 +84,7 @@ foreach ($slicedArray_3 as &$value_3) {
 
 $top_rating_sql_4 = "select * from products where companyname='Dad Joke Inc' order by average desc limit 5";
 $top_visited_sql_4 = "select * from products where companyname='Dad Joke Inc' order by visited desc limit 5";
-$last_visted_sql_4 = "select pagename from user_activity where username = '".$_COOKIE['username']."' AND  companyname='Dad Joke Inc' order by id desc";
+$last_visted_sql_4 = "select pagename from user_activity where username = '".$_COOKIE['username']."' AND  companyname='Dad jokes inc' order by id desc";
 $top_rating_result_4 = mysqli_query($mysqli, $top_rating_sql_4);
 $top_visited_result_4 = mysqli_query($mysqli, $top_visited_sql_4);
 $last_visited_activity_4 = mysqli_query($mysqli, $last_visted_sql_4);
