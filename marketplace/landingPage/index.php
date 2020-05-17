@@ -156,9 +156,9 @@ if(!getCookie('username')){
                 </div>
               </div><!-- End portfolio item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Rashmi', '')">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item" onclick="navigateToCompany('Rumination', 'http://rashmikumari.us/services.php')">
                 <div class="portfolio-wrap">
-                  <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
+                  <img src="http://rashmikumari.us/images/my%20post%20(13).jpg?crc=3823704199" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Rashmi</h4>
                     <p>Web</p>
@@ -292,10 +292,10 @@ if(!getCookie('username')){
                       <span>Owner of Website 3</span>
                     </div>
                     <div class="social">
-                      <a href="#"><i class="icofont-twitter"></i></a>
-                      <a href="#"><i class="icofont-facebook"></i></a>
-                      <a href="#"><i class="icofont-instagram"></i></a>
-                      <a href="#"><i class="icofont-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/rashmi-ku"><i class="icofont-twitter"></i></a>
+                      <a href="https://www.facebook.com/reshu.rashmikumari"><i class="icofont-facebook"></i></a>
+                      <a href="https://www.instagram.com/reshu.rashmikumari/"><i class="icofont-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/rashmi-ku/"><i class="icofont-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
